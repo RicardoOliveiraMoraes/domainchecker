@@ -3,5 +3,9 @@
     "target": "https://rdap.registro.br",
     "pathRewrite": { "^/rdap": "" },
     "changeOrigin": true
+  },
+  "/server": {
+    "target": "https://newppp-766202007.development.catalystserverless.com",
+    "changeOrigin": true
   }
 }

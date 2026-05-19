@@ -1,4 +1,8 @@
 {
+  "functions": {
+    "targets": ["leads_api"],
+    "source": "functions"
+  },
   "slate": {
     "apps": [
       {
