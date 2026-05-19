@@ -1,3 +1,8 @@
+const RDAP_BASE =
+  process.env.NODE_ENV === 'production'
+    ? 'https://rdap.registro.br'
+    : '/rdap'
+
 const DELAY_MS = 300
 
 function sleep(ms) {
@@ -6,7 +11,7 @@ function sleep(ms) {
 
 export async function checkDomain(domain) {
   try {
-    const res = await fetch(`/rdap/domain/${domain}`, {
+    const res = await fetch(`${RDAP_BASE}/domain/${domain}`, {
       headers: { Accept: 'application/rdap+json' },
     })
     if (res.status === 404) return { domain, available: true }

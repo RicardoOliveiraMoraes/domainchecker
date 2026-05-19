@@ -1,0 +1,13 @@
+{
+  "slate": {
+    "apps": [
+      {
+        "name": "domain-checker",
+        "framework": "react",
+        "installCommand": "npm install",
+        "buildCommand": "npm run build",
+        "buildPath": "build"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "/rdap": {
+    "target": "https://rdap.registro.br",
+    "pathRewrite": { "^/rdap": "" },
+    "changeOrigin": true
+  }
+}
